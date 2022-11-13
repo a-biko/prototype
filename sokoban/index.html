@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      .container {
+        position: relative;
+        background-color: #000;
+      }
+      .tile {
+        position: absolute;
+        width: var(--size);
+        height: var(--size);
+        pointer-events: none;
+      }
+      .luggage,
+      .hero {
+        position: absolute;
+        width: var(--size);
+        height: var(--size);
+        font-size: calc(var(--size) * 0.95);
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        transition: all 50ms linear;
+        background-color: aqua;
+      }
+
+      body {
+        overflow: hidden;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+    </style>
+    <script src="main.js"></script>
+  </head>
+  <body></body>
+</html>
